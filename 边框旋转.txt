@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		body{
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}	
+		.bigbox{
+			position: relative;
+			width: 200px;
+			height: 200px;
+			margin:100px auto;
+			border-radius: 50%;
+			overflow: hidden;
+		}
+		img{
+			position: relative;
+			width: 180px;
+			height: 180px;
+			border-radius: 50%;
+			margin: 10px;
+			z-index: 1;
+		}
+		.box-rotate{
+			position: absolute;
+			width: 400px;
+			height: 400px;
+			top: -100px;
+			left: -100px;
+			transition: all 9s linear;
+			-wenkit-transition: all 9s linear;
+		}
+		.quart{
+			width: 200px;
+			height: 200px;
+			position: absolute;
+		}
+		.orange{
+			top: 0px;
+			left: 0px;
+			background-color: orange;
+		}
+		.blue{
+			top: 0px;
+			left: 50%;
+			background-color: blue;
+		}
+		.yellow{
+			top: 200px;
+			left: 0px;
+			background-color: yellow;
+		}
+		.green{
+			top: 200px;
+			left: 200px;
+			background-color: green;
+		}
+		.bigbox:hover .box-rotate{
+			transform: rotate(360deg);
+			-wekbit-transform: rotate(360deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="bigbox" >
+		<img src="Í·Ïñ.png">
+		<div class="box-rotate">
+			<div class="quart orange"></div>
+            <div class="quart blue"></div>
+            <div class="quart yellow"></div>
+            <div class="quart green"></div>
+		</div>
+	</div>
+</body>
+</html>
